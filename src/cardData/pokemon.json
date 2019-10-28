@@ -1,0 +1,62 @@
+[
+	{
+		"id": 1,
+		"name": "abra",
+		"image": "../../../abra.svg"
+	},
+	{
+		"id": 2,
+		"name": "bellsprout",
+		"image": "./cardData/svgImages/bellsprout.svg"
+	},
+	{
+		"id": 3,
+		"name": "bullbasaur",
+		"image": "./cardData/svgImages/bullbasaur.svg"
+	},
+	{
+		"id": 4,
+		"name": "charmander",
+		"image": "./cardData/svgImages/charmander.svg"
+	},
+	{
+		"id": 5,
+		"name": "dratini",
+		"image": "./cardData/svgImages/dratini.svg"
+	},
+	{
+		"id": 6,
+		"name": "jigglypuff",
+		"image": "./cardData/svgImages/jigglypuff.svg"
+	},
+	{
+		"id": 7,
+		"name": "mankey",
+		"image": "./cardData/svgImages/mankey.svg"
+	},
+	{
+		"id": 8,
+		"name": "meowth",
+		"image": "./cardData/svgImages/meowth.svg"
+	},
+	{
+		"id": 9,
+		"name": "mew",
+		"image": "./cardData/svgImages/mew.svg"
+	},
+	{
+		"id": 10,
+		"name": "pidgey",
+		"image": "./cardData/svgImages/pidgey.svg"
+	},
+	{
+		"id": 11,
+		"name": "pikachu",
+		"image": "./cardData/svgImages/pikachu-2.svg"
+	},
+	{
+		"id": 12,
+		"name": "psyduck",
+		"image": "./cardData/svgImages/psyduck.svg"
+	}
+]

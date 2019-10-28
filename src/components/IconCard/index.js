@@ -4,7 +4,9 @@ import "./style.css";
 function IconCard(props) {
 	return (
 		<div onClick={props.onClick} className="IconCard">
-			<div className="IconImage"></div>
+			<div className="IconImage">
+				<img src={props.img} alt={props.name} />
+			</div>
 		</div>
 	);
 }
