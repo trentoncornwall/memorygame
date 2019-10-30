@@ -1,7 +1,7 @@
 .IconCard {
-  width: 100px;
-  height: 100px;
-  border: solid 1px rgb(204, 204, 204);
+  width: 125px;
+  height: 125px;
+  border: solid 1px rgb(235, 235, 235);
   border-radius: 10px;
   display: block;
   cursor: pointer;

@@ -3,6 +3,7 @@ import ScoreCard from "./components/ScoreCard";
 import Nav from "./components/Nav";
 import IconCard from "./components/IconCard";
 import Pokemon from "./cardData/pokemon.json";
+import CardWrapper from "./components/CardWrapper";
 
 class App extends Component {
   state = { score: 0, topScore: 0, clicked: [], pmon: [] };
@@ -25,7 +26,7 @@ class App extends Component {
     //reset everything and replace topscore with current score if higher
     let scoreCheck = this.state.score > this.state.topScore;
 
-    //determines if its a new high score or not
+    //determines if its a new high score or nots
     const reset = topScore => {
       this.setState({
         score: 0,
@@ -61,15 +62,17 @@ class App extends Component {
           <ScoreCard score={this.state.score} topScore={this.state.topScore} />
         </Nav>
         {/* Creates the Icons */}
-        {this.state.pmon.map(pokemon => (
-          <IconCard
-            key={pokemon.id}
-            id={pokemon.id}
-            name={pokemon.name}
-            onClick={() => this.handleBtnClick(pokemon.id)}
-            img={pokemon.image}
-          />
-        ))}
+        <CardWrapper>
+          {this.state.pmon.map(pokemon => (
+            <IconCard
+              key={pokemon.id}
+              id={pokemon.id}
+              name={pokemon.name}
+              onClick={() => this.handleBtnClick(pokemon.id)}
+              img={pokemon.image}
+            />
+          ))}
+        </CardWrapper>
       </div>
     );
   }
