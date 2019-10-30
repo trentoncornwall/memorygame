@@ -1,0 +1,6 @@
+.Nav {
+	height: 70px;
+	background-color: rgb(46, 186, 228);
+	-webkit-box-shadow: 0px -6px 15px 11px rgba(0, 0, 0, 0.39);
+	box-shadow: 0px -6px 15px 11px rgba(0, 0, 0, 0.39);
+}

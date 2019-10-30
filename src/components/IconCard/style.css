@@ -1,9 +1,18 @@
 .IconCard {
-  width: 125px;
-  height: 125px;
-  border: solid 1px rgb(235, 235, 235);
-  border-radius: 10px;
-  display: block;
-  cursor: pointer;
-  padding: 5px;
+	width: 125px;
+	height: 125px;
+	border: solid 1px rgb(255, 255, 255);
+	border-radius: 10px;
+	display: block;
+	cursor: pointer;
+	background: rgb(255, 255, 255);
+	padding: 5px;
+	-webkit-box-shadow: 1px 1px 11px 3px rgba(0, 0, 0, 0.63);
+	box-shadow: 1px 1px 11px 3px rgba(0, 0, 0, 0.63);
+}
+
+.IconCard:hover {
+	background-color: rgb(245, 245, 245);
+	width: 127px;
+	height: 127px;
 }
