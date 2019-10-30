@@ -4,6 +4,7 @@ import Nav from "./components/Nav";
 import IconCard from "./components/IconCard";
 import Pokemon from "./cardData/pokemon.json";
 import CardWrapper from "./components/CardWrapper";
+import Main from "./components/Main";
 
 class App extends Component {
   state = { score: 0, topScore: 0, clicked: [], pmon: [] };
@@ -62,17 +63,19 @@ class App extends Component {
           <ScoreCard score={this.state.score} topScore={this.state.topScore} />
         </Nav>
         {/* Creates the Icons */}
-        <CardWrapper>
-          {this.state.pmon.map(pokemon => (
-            <IconCard
-              key={pokemon.id}
-              id={pokemon.id}
-              name={pokemon.name}
-              onClick={() => this.handleBtnClick(pokemon.id)}
-              img={pokemon.image}
-            />
-          ))}
-        </CardWrapper>
+        <Main>
+          <CardWrapper>
+            {this.state.pmon.map(pokemon => (
+              <IconCard
+                key={pokemon.id}
+                id={pokemon.id}
+                name={pokemon.name}
+                onClick={() => this.handleBtnClick(pokemon.id)}
+                img={pokemon.image}
+              />
+            ))}
+          </CardWrapper>
+        </Main>
       </div>
     );
   }
