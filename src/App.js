@@ -9,14 +9,10 @@ class App extends Component {
 
   // checks to see if it's been clicked yet and adjust state
   handleBtnClick = id => {
-    this.state.clicked.includes(id)
-      ? this.alreadyClicked(id)
-      : this.newlyClicked(id);
+    this.state.clicked.includes(id) ? this.lose(id) : this.success(id);
   };
 
-  newlyClicked = id => {
-    console.log("NewlyClicked being called with", id);
-
+  success = id => {
     this.setState({
       score: this.state.score + 1,
       clicked: [...this.state.clicked, id]
@@ -25,8 +21,21 @@ class App extends Component {
     this.shufflePokemon();
   };
 
-  alreadyClicked = id => {
-    console.log("already clicked", id, this.state.clicked);
+  lose = id => {
+    //reset everything and replace topscore with current score if higher
+    let scoreCheck = this.state.score > this.state.topScore;
+
+    //determines if its a new high score or not
+    const reset = topScore => {
+      this.setState({
+        score: 0,
+        topScore: topScore,
+        clicked: []
+      });
+    };
+
+    scoreCheck ? reset(this.state.score) : reset(this.state.topScore);
+    this.shufflePokemon();
   };
 
   shufflePokemon = () => {
@@ -39,6 +48,7 @@ class App extends Component {
       pmon: newPokemon
     });
   };
+
   componentDidMount() {
     this.shufflePokemon();
   }
