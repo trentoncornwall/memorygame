@@ -7,7 +7,7 @@ function Header(props) {
 			<div className="pageName">
 				<h1>Pokémon Memory Game</h1>
 			</div>
-			<div className="info">Try and select each Pokémon once!</div>
+			<div className="info">{props.text}</div>
 		</div>
 	);
 }

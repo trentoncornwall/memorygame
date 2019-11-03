@@ -8,7 +8,14 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 
 class App extends Component {
-	state = { score: 0, topScore: 0, clicked: [], pmon: [] };
+	state = {
+		score: 0,
+		topScore: 0,
+		clicked: [],
+		pmon: [],
+		text:
+			"Try and catch all the Pokémon! If you select the same Pokémon more then once, you will lose. Watch your score at the top!"
+	};
 
 	// checks to see if it's been clicked yet and adjust state
 	handleBtnClick = id => {
@@ -18,7 +25,18 @@ class App extends Component {
 	success = id => {
 		this.setState({
 			score: this.state.score + 1,
-			clicked: [...this.state.clicked, id]
+			clicked: [...this.state.clicked, id],
+			text: "Good Job!"
+		});
+
+		this.state.score === 11 ? this.win() : this.shufflePokemon();
+	};
+
+	win = () => {
+		this.setState({
+			score: 0,
+			topScore: 12,
+			text: "Good Job, you caught them all!"
 		});
 
 		this.shufflePokemon();
@@ -33,7 +51,8 @@ class App extends Component {
 			this.setState({
 				score: 0,
 				topScore: topScore,
-				clicked: []
+				clicked: [],
+				text: "Nice Try!"
 			});
 		};
 
@@ -64,7 +83,7 @@ class App extends Component {
 					<ScoreCard score={this.state.score} topScore={this.state.topScore} />
 				</Nav>
 				{/* Creates the Icons */}
-				<Header />
+				<Header text={this.state.text} />
 				<Main>
 					<CardWrapper>
 						{this.state.pmon.map(pokemon => (
