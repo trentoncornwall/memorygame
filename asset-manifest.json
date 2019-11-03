@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/memorygame/static/css/main.206a1ebe.chunk.css",
+    "main.js": "/memorygame/static/js/main.e46e93fd.chunk.js",
+    "main.js.map": "/memorygame/static/js/main.e46e93fd.chunk.js.map",
+    "runtime-main.js": "/memorygame/static/js/runtime-main.1902c3d0.js",
+    "runtime-main.js.map": "/memorygame/static/js/runtime-main.1902c3d0.js.map",
+    "static/js/2.32b00498.chunk.js": "/memorygame/static/js/2.32b00498.chunk.js",
+    "static/js/2.32b00498.chunk.js.map": "/memorygame/static/js/2.32b00498.chunk.js.map",
+    "index.html": "/memorygame/index.html",
+    "precache-manifest.c050c65d50b280ee44fca274eea04df4.js": "/memorygame/precache-manifest.c050c65d50b280ee44fca274eea04df4.js",
+    "service-worker.js": "/memorygame/service-worker.js",
+    "static/css/main.206a1ebe.chunk.css.map": "/memorygame/static/css/main.206a1ebe.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1902c3d0.js",
+    "static/js/2.32b00498.chunk.js",
+    "static/css/main.206a1ebe.chunk.css",
+    "static/js/main.e46e93fd.chunk.js"
+  ]
+}
