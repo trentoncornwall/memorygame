@@ -13,8 +13,7 @@ class App extends Component {
 		topScore: 0,
 		clicked: [],
 		pmon: [],
-		text:
-			"Try and catch all the Pokémon! If you select the same Pokémon more then once, you will lose. Watch your score at the top!"
+		text: "Try and catch them all! Don't click on them more then once though!"
 	};
 
 	// checks to see if it's been clicked yet and adjust state

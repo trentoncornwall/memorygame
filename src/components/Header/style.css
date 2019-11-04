@@ -14,6 +14,7 @@
 }
 
 .header h1 {
+	color: rgb(205, 52, 52);
 	margin: 0px;
 }
 
@@ -28,6 +29,13 @@
 .info {
 	display: flex;
 	justify-content: center;
+	padding: 10px;
 	width: 100%;
 	margin-bottom: 8px;
+}
+
+@media only screen and (max-width: 450px) {
+	.header h1 {
+		font-size: 26px;
+	}
 }

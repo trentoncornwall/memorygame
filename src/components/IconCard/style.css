@@ -16,3 +16,18 @@
 	width: 127px;
 	height: 127px;
 }
+
+@media only screen and (max-width: 450px) {
+	.IconCard {
+		width: 90px;
+		height: 90px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.IconCard:hover {
+		background-color: rgb(255, 255, 255);
+		width: 90px;
+		height: 90px;
+	}
+}
